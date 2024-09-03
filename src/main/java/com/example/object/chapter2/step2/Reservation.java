@@ -2,7 +2,7 @@ package com.example.object.chapter2.step2;
 
 public class Reservation {
     private Customer customer;
-    private com.example.object.chapter2.step2.Screening Screening;
+    private Screening Screening;
     private Money fee;
     private int audienceCount;
 

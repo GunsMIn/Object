@@ -1,8 +1,11 @@
 package com.example.object.chapter2.step2;
 
+import lombok.AllArgsConstructor;
+
 import java.math.BigDecimal;
 import java.util.Objects;
 
+@AllArgsConstructor
 public class Money {
     public static final Money ZERO = Money.wons(0);
 
@@ -14,10 +17,6 @@ public class Money {
 
     public static Money wons(double amount) {
         return new Money(BigDecimal.valueOf(amount));
-    }
-
-    Money(BigDecimal amount) {
-        this.amount = amount;
     }
 
     public Money plus(Money amount) {
